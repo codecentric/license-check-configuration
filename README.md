@@ -1,3 +1,7 @@
 # license-check-configuration
 
-TBD.
+<!--TOC-->
+
+- [license-check-configuration](#license-check-configuration)
+
+<!--TOC-->
