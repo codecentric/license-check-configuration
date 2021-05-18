@@ -4,3 +4,6 @@ help:	## Show this help.
 local-setup: ## Install local repository hooks
 	pipenv install -d
 	pipenv run pre-commit install
+
+run-webserver: ## Run a local webserver for testing files
+	pipenv run python -m http.server
