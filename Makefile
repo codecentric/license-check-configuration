@@ -7,3 +7,6 @@ local-setup: ## Install local repository hooks
 
 run-webserver: ## Run a local webserver for testing files
 	pipenv run python -m http.server
+
+lint:
+	pipenv run pre-commit run --all-files
