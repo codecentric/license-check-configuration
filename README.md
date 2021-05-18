@@ -1,0 +1,3 @@
+# license-check-configuration
+
+TBD.
