@@ -13,6 +13,8 @@ jobs:
       with:
         python-version: 3.9
     - name: setup environment
-      run: make local-setup
+      run: |
+        pip install pipenv
+        make local-setup
     - name: run linter
       run: make lint
