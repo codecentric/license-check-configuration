@@ -8,9 +8,12 @@ allowedLicenses:
 - (MIT OR Apache-2.0)
 - (MIT OR CC0-1.0)
 - (WTFPL OR MIT)
+- (BSD-2-Clause OR MIT OR Apache-2.0)
 - 0BSD
 - AFLv2.1,BSD
+- Apache*
 - Apache-2.0
+- BSD*
 - BSD-2-Clause
 - BSD-3-Clause
 - CC-BY-3.0
@@ -19,4 +22,7 @@ allowedLicenses:
 - ISC
 - MIT
 - MIT*
+- Python-2.0
 - Unlicense
+- WTFPL
+- WTFPL OR ISC
