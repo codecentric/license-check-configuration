@@ -13,7 +13,7 @@
 
 ## Overview
 
-Checking the licenses of your open source dependencies is important. But the necessary collection is something, that you don't want to do again for each project. To simplify this, codecentric collects a central list of licenses that can be used for specific purposes. This list is provided as an external configuration file for the [pre-commit-license-checks](https://github.com/nbyl/pre-commit-license-checks) which can be used by [pre-commit](https://pre-commit.com/).
+Checking the licenses of your open source dependencies is important. But the necessary collection is something, that you don't want to do again for each project. To simplify this, codecentric collects a central list of licenses that can be used for specific purposes. This list is provided as an external configuration file for the [kontrolilo](https://github.com/kontrolilo/kontrolilo) which can be used by [pre-commit](https://pre-commit.com/).
 
 **This repository does not contain any legal advice which licenses can be used for which purposes. Please check the list before using it. You have been warned.**
 
@@ -28,9 +28,12 @@ When setting a new project, create a new file called `.pre-commit-config.yaml` t
 ```
 ---
 repos:
-  - repo: https://github.com/nbyl/pre-commit-license-checks
-    rev: v1.3.1
+  - repo: https://github.com/kontrolilo/kontrolilo
+    rev: v2.0.0
     hooks:
+      - id: license-check-configuration-lint
+      - id: license-check-gradle
+      - id: license-check-maven
       - id: license-check-npm
       - id: license-check-pipenv
 ```
